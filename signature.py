@@ -1,6 +1,7 @@
 # Code modified from 'Serge' in the developer community
 # Accessed via PTV-API signature creation document page 12
 
+import sys
 from hashlib import sha1
 import hmac
 
@@ -23,6 +24,5 @@ def getURL(request):
 
     # Return correct URL
     return 'http://timetableapi.ptv.vic.gov.au'+raw+'&signature={1}'.format(devID, signature)
-
 
 
